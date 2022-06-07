@@ -7,6 +7,30 @@
     <title>php-badwords</title>
 </head>
 <body>
-    
+    <!-- 
+    Creare una variabile con un paragrafo di testo a vostra scelta.
+    Stampare a schermo il paragrafo e la sua lunghezza.
+    Una parola da censurare viene passata dall'utente tramite parametro GET.
+    Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
+     -->
+
+    <?php 
+    $ilParagrafo = " Salve salve salve salve salve jknjnjnjnj";
+    ?>
+
+    <h2>Il Paragrafo è questo</h2>
+    <p>
+        <?php echo $ilParagrafo; ?>
+    </p>
+
+    <h2>La lunghezza è</h2>
+    <p>
+        <?php
+        $paragrafoLenghth = strlen($ilParagrafo);
+        echo "La stringa è lunga " . $paragrafoLenghth . "caratteri" ;
+        ?>
+    </p>
+
+
 </body>
 </html>
