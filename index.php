@@ -49,9 +49,20 @@ error_reporting(E_ALL);
 
     <p>
         <?php 
-        echo str_replace("salve",  $clWord, $ilParagrafo);
+        $nuovo = str_replace("salve",  $clWord, $ilParagrafo);
+        echo $nuovo;
         ?>
     </p>
+
+    <p>
+        <?php  
+            $nuovoLenghth = strlen($nuovo);
+            echo "LA lunghezza nuova è" . $nuovoLenghth ."caratteri";
+        ?>
+    </p>
+    
+
+
 
 
 </body>
