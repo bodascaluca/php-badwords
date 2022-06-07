@@ -15,8 +15,10 @@
      -->
 
     <?php 
-    $ilParagrafo = " Salve salve salve salve salve jknjnjnjnj";
+    $ilParagrafo = "Salve come sta? Molte bene, salve salve";
     ?>
+
+
 
     <h2>Il Paragrafo è questo</h2>
     <p>
@@ -28,6 +30,18 @@
         <?php
         $paragrafoLenghth = strlen($ilParagrafo);
         echo "La stringa è lunga " . $paragrafoLenghth . "caratteri" ;
+        ?>
+    </p>
+
+    <?php  
+        $clWord = $_GET['name'];
+    ?>
+
+    <h2>La sostituzione della parola</h2>
+
+    <p>
+        <?php 
+        echo str_replace("salve",  $clWord, $ilParagrafo);
         ?>
     </p>
 
